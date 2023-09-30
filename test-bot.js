@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
+const secrets = require('./secrets.js');
 
 const client = new Client({
     intents: [
@@ -21,4 +22,4 @@ client.on('messageCreate', (message) => {
   }
 });
 
-client.login('MTE1Nzc2NTIwOTU1ODExMDMwOQ.GJKoFs.8-E6ky1iPRDd5zNYZsmjahzDtaAYAcm02uBMJ0');
+client.login(secrets.token);
